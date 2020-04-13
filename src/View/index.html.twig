@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+    <h1>Hello World !</h1>
+
+
+        {% for product in products %}
+            <div class="col-4 card" >
+                <div class="card-body">
+                    <h5 class="card-title">{{ product }}</h5>
+                    <p class="card-text">Some quick example text to build the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go </a>
+                </div>
+            </div>
+        {% endfor %}
+
+
+{% endblock %}
